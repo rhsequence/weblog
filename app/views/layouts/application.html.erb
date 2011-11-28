@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Weblog</title>
+  <title>Go Lady Warriors! :: <%= @title %></title>
   <%= render 'layouts/stylesheets' %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -10,11 +10,7 @@
 <div id="container">
 <div id="header"></div>
 <div id="navigation">
-<label>Link 1</label>
-<label>Link 2</label>
-<label>Link 3</label>
-<label>Link 4</label>
-<label>Link 5</label>
+<%= render 'layouts/navigation' %>
 </div>
 <div id="sidebar">
 	<ul>

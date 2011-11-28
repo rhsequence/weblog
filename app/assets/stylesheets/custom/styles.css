@@ -12,15 +12,26 @@ body{
 	height:288px;
 	background-color:#FF3300;
 }
-#navigation{
-	background-color:#000000;
-	color:#FFF;
-	padding:10px;
+#navigation ul {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #000;
 }
-#navigation label{
-	margin:50px;
-	text-align:center;
+
+#navigation ul li { display: inline; }
+
+#navigation ul li a {
+  text-decoration: none;
+  padding: .25em 1em;
 }
+a:link, a:visited { color: #fff; }
+#navigation ul li a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
 #sidebar
 {
 	float: right;

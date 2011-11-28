@@ -3,6 +3,10 @@ Weblog::Application.routes.draw do
   resources :posts
 
   root :to => 'pages#home'
+  match '/roster', :to => 'pages#roster'  
+  match '/photos', :to => 'pages#photos'
+  match '/coaches', :to => 'pages#coaches'
+  match '/sponsors', :to => 'pages#sponsors'
   match '/contact', :to => 'pages#contact'
 
   # The priority is based upon order of creation:
