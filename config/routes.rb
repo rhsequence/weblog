@@ -1,7 +1,9 @@
 Weblog::Application.routes.draw do
-  get "pages/home"
+  
+  resources :posts
 
-  get "pages/contact"
+  root :to => 'pages#home'
+  match '/contact', :to => 'pages#contact'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
