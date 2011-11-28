@@ -1,7 +1,5 @@
 Weblog::Application.routes.draw do
   
-  resources :posts
-
   root :to => 'pages#home'
   match '/roster', :to => 'pages#roster'  
   match '/photos', :to => 'pages#photos'
