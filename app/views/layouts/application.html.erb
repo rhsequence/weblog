@@ -2,13 +2,31 @@
 <html>
 <head>
   <title>Weblog</title>
-  <%= stylesheet_link_tag    "application" %>
+  <%= render 'layouts/stylesheets' %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div id="container">
+<div id="header"></div>
+<div id="navigation">
+<label>Link 1</label>
+<label>Link 2</label>
+<label>Link 3</label>
+<label>Link 4</label>
+<label>Link 5</label>
+</div>
+<div id="sidebar">
+	<ul>
+		<li>Post 1</li>
+	</ul>
+</div>
+<div id="content">
+	<%= yield =%>
+</div>
+<div id="footer">Site Created by Richard Hernandez</div>
+</div>
 
-<%= yield %>
 
 </body>
 </html>
